@@ -1,0 +1,925 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	           home-book
+	        </title>
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/style.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.css">
+						<link rel="stylesheet" href="fonts/font-awesome.min.css">						
+	                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+		               <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+					   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+					   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+					   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	    </head>
+	
+	<body> 
+	    <div class="laptop-section">
+		<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+			<div id="bigcontainer" class="container-fluid">
+				<div class="navbar-header">
+				   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"> 	
+							<img width="186px" height="36px;" src="img/logo.png">
+					    </a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <div class="nav-all-right">
+						<form class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Property ID">
+								<i class="bi bi-search"></i>
+							</div>
+							
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<li class=""><a href="#">Buy</a></li>
+							<li class=""><a href="#">Rent</a></li>
+							<li class=""><a href="#">Invest</a></li>
+							<li class=""><a href="#">Agents</a></li>
+							<li class=""><a href="#">Blog</a></li>
+							<li class="wanted"><a href="#">Wanted</a></li>
+							<li class="sign"><a href="#"> Get started</a></li>
+							<li class=""><a href="#"> Sign in</a></li>
+						</ul>
+					</div>
+			    </div>
+	        </div>
+	    </nav>
+	    <section class="main-view">
+	        <div class="container-fluid">
+		        <div class="row">
+			        <div class="col-md-12">
+					    <div class="allselecthouse">
+						    <div class="main-logo-view">
+							    <img width="338px" height="65px" style="filter: brightness(0) invert(1);" src="img/logo.png">
+								<p>Pakistan's 1st Online Real Estate Marketplace</p>
+							</div>
+						
+						<div class="main-allselect">
+						    <div class="row">
+						        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 mainallselectcolom">
+								    <ul class="allmenuselect" id="myDIV">
+									    <li><a class="bnh active" href="#">BUY</a></li>
+									    <li><a class="bnh" href="#">Rent</a></li>
+									    <li><a class="bnh" href="#">Invest</a></li>
+									</ul>
+								    <ul class="selectmain1">
+									    <li> 
+											<select id="select-state" placeholder="Choose Country">
+												<option value=""  selected disabled hidden>Choose Country</option>
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District of Columbia</option>
+											</select>
+									    </li>
+									    <li onclick="spanrotet()"> 
+											<select class="js-example-basic-multiple" name="states[]" multiple="multiple"  placeholder="Select Areas">
+											<option value=""  selected disabled hidden>Select Areas</option>
+											  <option value="AL">Alabama</option>
+											  <option value="Ab">Alabama</option>
+											  <option value="Ac">Alabama</option>
+											  <option value="Ad">Alabama</option>
+											  <option value="WY">Wyoming</option>
+											</select>
+											<span id="idrote" class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+									    </li>
+									    <li> 
+											<select id="select-state" placeholder="All Residentail">
+												<option value=""  selected disabled hidden>All Residentail</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District of Columbia</option>
+											</select>
+									    </li>
+									    <li>
+										   <center><a href="#"><i class="bi bi-search"></i></a></center>
+										</li>
+									</ul>
+								    <div class="btn-group pricerange">
+										<button id="pvalue" type="button" class="btn btn-default dropdown-toggle mainbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Price Range &nbsp;<span class="caret"></span>
+										</button>
+										<div class="dropdown-menu">
+										   <div class="range-slider">
+										    <div class="minmax">
+												<p>Min</p>
+												<p>Max</p>
+											</div><br>
+											<span class="slidenumber">
+												<input id="onep" onkeyup="numDifferentiation()" name="minValue" min="5000" max="985000" type="number" value="5000" />
+												<input id="towp" onkeyup="numDifferenttow()"  name="maxValue" min="10000" max="1000000" type="number" value="1000000" />
+											</span>
+											<div class="minmax laccore">
+												<p id="vlinput"></p>
+												<p id="vlinputtow"></p>
+											</div>
+											
+											<div class="rangeinput">
+											<input value="5000" min="5000" max="985000" step="500" type="range"/>
+											<input value="100000" min="100000" max="1000000" step="500" type="range"/>
+										    </div>
+										    </div>
+											 <div class="done">
+												<button onclick="hitvalue()" type="button" class="btn btn-default">Done</button>
+											</div>
+										</div>
+										
+										
+								    </div>
+								    <div class="btn-group pricerange">
+										<button id="pvaluetow" type="button" class="btn btn-default dropdown-toggle mainbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Size Range &nbsp;<span class="caret"></span>
+										</button>
+										<div class="dropdown-menu">
+										   <div class="slidername">
+										        <p>Area Unit : &nbsp;<b id="mainmarala" style="color:#2071eb">Marla</b></p>
+										   </div>
+										   <div class="range-slider size-slider">
+										    <div class="minmax">
+												<p>Min</p>
+												<p>Max</p>
+											</div><br>
+											<span class="slidenumber">
+												<input id="oneps" name="minValue" onkeyup="numDone()" min="0" max="49" type="number"   value="0" />
+												<input  id="tows" onkeyup="numDonetow()" name="maxValue" min="1" max="50" type="number" value="50" />
+											</span>
+											<div class="minmax laccore">
+												<p id="vlinputs"></p>
+												<p id="vlinputtows"></p>
+											</div>
+											<div class="rangeinput">
+											<input value="0" min="0" max="49" step="1" type="range"/>
+											<input value="50" min="1" max="50" step="1" type="range"/>
+										    </div>
+										    </div>
+											 <div class="done">
+												<button onclick="hitvaluetow()" type="button" class="btn btn-default">Done</button>
+											</div>
+										</div>
+								    </div>
+								    <div class="btn-group pricerange pagenumber">
+										<button type="button" class="btn btn-default dropdown-toggle mainbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span class="number"></span> Beds &nbsp;<span class="caret"></span>
+										</button>
+										
+										  <div id="pfocus" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <p class="alp activep">1</p>
+										    <p class="alp">2</p>
+										    <p class="alp">3</p>
+										    <p class="alp">4</p>
+										    <p class="alp">5</p>
+										  </div>
+
+								    </div>
+								
+								</div>
+							</div>
+						</div>
+						</div>
+				    </div>
+			    </div>
+				<div class="mainlastimage">
+				    <img class="hyds" src="img/HYDS.svg">
+				    <img class="rag" src="img/RAG_Icon.png">
+				</div>
+		    </div>
+	    </section>
+		<section class="investment">
+		    <div class="container">
+			    <div class="row title">
+				    <div class="col-md-12">
+					    <center>
+						    <h1>Best Investment in Pakistan</h1>
+							<h4>100% refundable, safe and secure investments</h4>
+							<h5>Our criteria to choose best investment projects</h5>
+						</center>
+					</div>
+				</div>
+				<div class="row activities">
+				    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+				        <ul>
+						    <li><span>O</span><br><br><span>Ownership</span></li>
+						    <li><span>A</span><br><br><span>Approvals</span></li>
+						    <li><span>D</span><br><br><span>Demand</span></li>
+						    <li><span>D</span><br><br><span>Delivery</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row seemore">
+				    <div class="col-md-12">
+				        <center><p>
+                            <a href="#block-id" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="block-id">
+								<span class="collapsed">
+									See more
+								</span>
+							    <span class="expanded">
+								See Less
+							    </span>
+                            </a>
+                        </p></center>
+						<center><p class="collapse" id="block-id">
+							  <span>Ownership & Approvals</span><br>
+							Real estate dealings may be fraught with difficulties and legal concerns based on various factors. Before making an investment, it is critical to verify that the land has been properly and completely acquired, and all necessary approvals have been processed. At Imarat, we focus on risk assessment and mitigation through intensive due diligence that drives the highest levels of compliance in the industry - our trademark.<br>
+							 <span style="margin-top:10px;">Demand & Delivery</span><br>
+							 The secret to success in commercial projects is straightforward - hosting the right mix of brands to best satisfy the flourishing appetites of Pakistan’s fast-growing & increasingly prosperous population. To maximise the revenue potential of each project, a thorough commercial feasibility, including market analysis and space planning, is critical. Our Group has been delivering real estate excellence in the UK and Pakistan for more than 15 years and our expertise lies in real estate development, leasing and management. Our local and international corporate leasing teams begin working on a project while it is still at the concept stage, in order to attract the very best blend of local & international brands. Our aim is to create iconic commercial projects that become desirable destinations with an enduring appeal.
+							<br> <br>
+						</p></center>
+                    </div>
+				</div>
+				<div class="row brand-slide ">
+					<div class="col-md-12" >
+						 <div class="carousel carousel-showmanymoveone slide" id="carousel123">
+							<div  class="carousel-inner" id="bootstrap-touch-slider">
+								<div class="item active">
+									<div class="col-xs-12 col-sm-6 col-md-4">
+										<a class="thumbnail-slide" href="#">
+											<div class="thumbnail">
+								                <img class="main-img" src="img/slide/1.jpg" alt="...">
+											    <div class="caption">
+													<h2>Paragon Towrs</h2>
+													<p class="str">Karachi</p>
+													<hr style="margin:0;">
+													<div class="row under">
+														<div class="col-md-8 col-sm-6 col-xs-7">
+														   <p >Strating From</p>
+														   <h3>Contact For Price</h3>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-5">
+															<center><img src="img/slide/t1.png"></center>
+														</div>
+													</div>
+											    </div>
+								            </div>
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-12 col-sm-6 col-md-4">
+										<a class="thumbnail-slide" href="#">
+											<div class="thumbnail">
+								                <img class="main-img" src="img/slide/2.jpg" alt="...">
+											    <div class="caption">
+													<h2>Jinnah Square Resdential Apartments</h2>
+													<p class="str">Lahore</p>
+													<hr style="margin:0;">
+													<div class="row under">
+														<div class="col-md-8 col-sm-6 col-xs-7">
+														   <p >Strating From</p>
+														   <h3><b>PRK</b> 25 lac</h3>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-5">
+															<center><img src="img/slide/t2.png"></center>
+														</div>
+													</div>
+											    </div>
+								            </div>
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-12 col-sm-6 col-md-4">
+										<a class="thumbnail-slide" href="#">
+											<div class="thumbnail">
+								                <img class="main-img" src="img/slide/3.jpg" alt="...">
+											    <div class="caption">
+													<h2>The Views</h2>
+													<p class="str">Karachi</p>
+													<hr style="margin:0;">
+													<div class="row under">
+														<div class="col-md-8 col-sm-6 col-xs-7">
+														   <p >Strating From</p>
+														   <h3><b>PRK</b> 25 crore</h3>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-5">
+															<center><img src="img/slide/t3.png"></center>
+														</div>
+													</div>
+											    </div>
+								            </div>
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-12 col-sm-6 col-md-4">
+										<a class="thumbnail-slide" href="#">
+											<div class="thumbnail">
+								                <img class="main-img" src="img/slide/5.jpg" alt="...">
+											    <div class="caption">
+													<h2>Imarat Builers Mall</h2>
+													<p class="str">Islamabad</p>
+													<hr style="margin:0;">
+													<div class="row under">
+														<div class="col-md-8 col-sm-6 col-xs-7">
+														   <p >Strating From</p>
+														   <h3><b>PRK</b> 1.09 crore</h3>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-5">
+															<center><img src="img/slide/t4.png"></center>
+														</div>
+													</div>
+											    </div>
+								            </div>
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-12 col-sm-6 col-md-4">
+										<a class="thumbnail-slide" href="#">
+											<div class="thumbnail">
+								                <img class="main-img" src="img/slide/1.jpg" alt="...">
+											    <div class="caption">
+													<h2>Paragon Towrs</h2>
+													<p class="str">Karachi</p>
+													<hr style="margin:0;">
+													<div class="row under">
+														<div class="col-md-8 col-sm-6 col-xs-7">
+														   <p >Strating From</p>
+														   <h3>Contact For Price</h3>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-5">
+															<center><img src="img/slide/t1.png"></center>
+														</div>
+													</div>
+											    </div>
+								            </div>
+										</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-xs-12 col-sm-6 col-md-4">
+										<a class="thumbnail-slide" href="#">
+											<div class="thumbnail">
+								                <img class="main-img" src="img/slide/1.jpg" alt="...">
+											    <div class="caption">
+													<h2>Paragon Towrs</h2>
+													<p class="str">Karachi</p>
+													<hr style="margin:0;">
+													<div class="row under">
+														<div class="col-md-8 col-sm-6 col-xs-7">
+														   <p >Strating From</p>
+														   <h3>Contact For Price</h3>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-5">
+															<center><img src="img/slide/t1.png"></center>
+														</div>
+													</div>
+											    </div>
+								            </div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+							<a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						</div>
+					</div>
+				
+			   </div>				
+			</div>
+		</section><br><br>
+        <section class="fresh">
+		    <div class="container">
+			    <div class="row title">
+				    <div class="col-md-12">
+					    <center>
+						    <h1>Fresh Listings</h1>
+						</center>
+					</div>
+				</div><br><br>
+				<div class="row th-select">
+				    <div class="col-md-12">
+					    <ul>
+						    <li> 
+								<select id="select-state" placeholder="Choose Country">
+									<option value=""  selected disabled hidden>Choose Country</option>
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District of Columbia</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mainth-fresh">
+				    <div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-fresh" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/fresh/1.jpg" alt="...">
+								<div class="sale">
+								<p>Fresh</p>
+							    </div>
+								<div class="caption">
+									<h3>10 Marla House For Sale</h3>
+									<p class="str">DHA Rahbar,Lahore</p>
+									<p class="beds">4 beds,4 bath</p>
+									<h2>PRK 1.6 crore</h2>
+								</div>
+							</div>
+						</a>
+					</div>
+				   <div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-fresh" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/fresh/1.jpg" alt="...">
+								<div class="sale">
+								<p>Fresh</p>
+							    </div>
+								<div class="caption">
+									<h3>10 Marla House For Sale</h3>
+									<p class="str">DHA Rahbar,Lahore</p>
+									<p class="beds">4 beds,4 bath</p>
+									<h2>PRK 1.6 crore</h2>
+								</div>
+							</div>
+						</a>
+					</div>
+				   <div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-fresh" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/fresh/1.jpg" alt="...">
+								<div class="sale">
+								<p>Fresh</p>
+							    </div>
+								<div class="caption">
+									<h3>10 Marla House For Sale</h3>
+									<p class="str">DHA Rahbar,Lahore</p>
+									<p class="beds">4 beds,4 bath</p>
+									<h2>PRK 1.6 crore</h2>
+								</div>
+							</div>
+						</a>
+					</div>
+				   <div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-fresh" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/fresh/1.jpg" alt="...">
+								<div class="sale">
+								<p>Fresh</p>
+							    </div>
+								<div class="caption">
+									<h3>10 Marla House For Sale</h3>
+									<p class="str">DHA Rahbar,Lahore</p>
+									<p class="beds">4 beds,4 bath</p>
+									<h2>PRK 1.6 crore</h2>
+								</div>
+							</div>
+						</a>
+					</div>
+				   
+				</div>
+			</div>
+	    </section><br><br>
+        <section class="tour">
+		    <div class="container">
+			    <div class="row">
+				    <div class="col-md-12">
+					    <div class="jumbotron">
+					        <center><img style="width: 15rem;" src="img/logo.png"></center>
+							<p>Community engagement is what Buy & Rent.com believes in. Under the ambit of its core values, Buy & Rent.com believes that progression in every wake of life is impossible without inclusion. Banking on this participatory approach, Buy & Rent.com has introduced ‘Buy & Rent Clubs’ to make every individual an integral part of this milieu and support ‘diversity in participation’. Buy & Rent.com, through a nonconventional methodology of Buy & Rent Clubs, seeks to extend numerous leisure opportunities to the every individual of the society through its platform.</p>
+							<center><a href="#" type="button" class="btn btn-default">Take a Tour</a></center>
+					    </div> 
+					</div>
+			    </div>
+			</div>
+		</section><br>
+        <section class="blog">
+		    <div class="container">
+			    <div class="row title">
+				    <div class="col-md-12">
+					    <center>
+						    <h1>Buy & Rent Blog</h1>
+						</center>
+					</div>
+				</div><br><br>
+				<div class="row mainth-blog">
+				    <div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-blog" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/blog/1.jpg" alt="...">
+								<div class="caption">
+									<h2>Why MEP Plans are Important in Buildings</h2>
+									<p class="str">Posted On Sat Oct 16 2021</p>
+									<p class="beds">Construction is a complex process that involves the expertise of many professionals, from laying the foundations of the building to the last stroke of a paintbrush, a building goes through various phases which are necessary for giving a building the complete shape. If some of the important phases of the construction are missed or aren’t given the proper attention the quality and the durability of the building can be hampered. Therefore, it is necessary that an owner of a house or commercial building should have information regarding the structural, electrical and mechanical aspects of the building.</p>
+									<hr style="margin:0;">
+									<h4>See More</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-blog" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/blog/2.jpg" alt="...">
+								<div class="caption">
+									<h2>Why MEP Plans are Important in Buildings</h2>
+									<p class="str">Posted On Sat Oct 16 2021</p>
+									<p class="beds">Construction is a complex process that involves the expertise of many professionals, from laying the foundations of the building to the last stroke of a paintbrush, a building goes through various phases which are necessary for giving a building the complete shape. If some of the important phases of the construction are missed or aren’t given the proper attention the quality and the durability of the building can be hampered. Therefore, it is necessary that an owner of a house or commercial building should have information regarding the structural, electrical and mechanical aspects of the building.</p>
+									<hr style="margin:0;">
+									<h4>See More</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-blog" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/blog/3.jpg" alt="...">
+								<div class="caption">
+									<h2>Why MEP Plans are Important in Buildings</h2>
+									<p class="str">Posted On Sat Oct 16 2021</p>
+									<p class="beds">Construction is a complex process that involves the expertise of many professionals, from laying the foundations of the building to the last stroke of a paintbrush, a building goes through various phases which are necessary for giving a building the complete shape. If some of the important phases of the construction are missed or aren’t given the proper attention the quality and the durability of the building can be hampered. Therefore, it is necessary that an owner of a house or commercial building should have information regarding the structural, electrical and mechanical aspects of the building.</p>
+									<hr style="margin:0;">
+									<h4>See More</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6">
+					    <a class="thumbnail-blog" href="#">
+							<div class="thumbnail">
+								<img class="main-img" src="img/blog/4.jpg" alt="...">
+								<div class="caption">
+									<h2>Why MEP Plans are Important in Buildings</h2>
+									<p class="str">Posted On Sat Oct 16 2021</p>
+									<p class="beds">Construction is a complex process that involves the expertise of many professionals, from laying the foundations of the building to the last stroke of a paintbrush, a building goes through various phases which are necessary for giving a building the complete shape. If some of the important phases of the construction are missed or aren’t given the proper attention the quality and the durability of the building can be hampered. Therefore, it is necessary that an owner of a house or commercial building should have information regarding the structural, electrical and mechanical aspects of the building.</p>
+									<hr style="margin:0;">
+									<h4>See More</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+	    </section><br><br>
+        <section class="location">
+		    <hr>
+		    <div class="container">
+			    <div class="row title">
+				    <div class="col-md-12">
+					    <center>
+						    <h1>Popular Locations</h1>
+						</center>
+					</div>
+				</div><br><br>
+				<div class="row p-location">
+				    <div class="col-md-4 col-sm-4 col-xs-6">
+						<h4>Karachi</h4>
+						<br>
+						<h5>Properties for Sale</h5>
+						
+						<p><a href="#">Houses for Sale in Karachi</a></p>
+						<p><a href="#">Plots for Sale in Karachi</a></p>
+						<p><a href="#">Apartments for Sale in Karachi</a></p>
+						<br>
+						<h5>Properties for Rent</h5>
+						<p><a href="#">Houses for Rent in Karachi</a></p>
+						<p><a href="#">Apartments for Rent in Karachi</a></p>
+						<br>
+						<h5>Popular Locations to Buy Houses</h5>
+						<p><a href="#">Houses for sale in DHA Karachi</a></p>
+						<p><a href="#">Houses for sale in Bahria town karachi</a></p>
+						<p><a href="#">Houses for sale in Nazimabad Karachi</a></p>
+						<p><a href="#">Houses for sale in Gulshan-e-Iqbal</a></p>
+						<p><a href="#">House for sale in Federal B area</a></p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<h4>Karachi</h4>
+						<br>
+						<h5></h5>
+						<p><a href="#">Houses for Sale in Karachi</a></p>
+						<p><a href="#">Plots for Sale in Karachi</a></p>
+						<p><a href="#">Apartments for Sale in Karachi</a></p>
+						<h5></h5>
+						<br>
+						<p><a href="#">Houses for Rent in Karachi</a></p>
+						<p><a href="#">Apartments for Rent in Karachi</a></p>
+						<br>
+						<h5></h5>
+						<p><a href="#">Houses for sale in DHA Karachi</a></p>
+						<p><a href="#">Houses for sale in Bahria town karachi</a></p>
+						<p><a href="#">Houses for sale in Nazimabad Karachi</a></p>
+						<p><a href="#">Houses for sale in Gulshan-e-Iqbal</a></p>
+						<p><a href="#">House for sale in Federal B area</a></p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<h4>ISLAMABAD</h4>
+						<br>
+						<h5></h5>
+						<p><a href="#">Houses for Sale in Islamabad</a></p>
+						<p><a href="#">Plots for Sale in Islamabad</a></p>
+						<p><a href="#">Apartments for Sale in Islamabad</a></p>
+						<h5></h5>
+						<br>
+						<p><a href="#">Houses for Rent in Islamabad</a></p>
+						<p><a href="#">Apartments for Rent in Islamabad</a></p>
+						<br>
+						<h5></h5>
+						<p><a href="#">Houses for Sale in DHA Islamabad</a></p>
+						<p><a href="#">Houses for Sale in F-6</a></p>
+						<p><a href="#">Houses for Sale in F-8</a></p>
+						<p><a href="#">Houses for Sale in E-11</a></p>
+						<p><a href="#">Houses for Sale in G-13</a></p>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+        <section class="appsgranna">
+		    <div class="container">
+			<hr>
+			    <div class="row">
+				    <div class="col-md-8 col-sm-8 leftapps">
+					    <p class="glogo"><img src="img/logo.png" width="120px"></p>
+				        <p class="wclco">Welcome to Buy & Rent.com - Pakistan’s 1st Online Real Estate Marketplace!</p>
+						<ul>
+						    <li><a href="#"><img src="img/apps/google-play.png"></a></li>
+						    <li><a href="#"><img src="img/apps/app-store.png"></a></li>
+						    <li><a href="#"><img src="img/apps/app-gallery.png"></a></li>
+						</ul>
+				   </div>
+				   <div class="col-md-4 col-sm-4 rightapps">
+				        <ul class="socile-icon">
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+						    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+				    </div>
+			    </div>
+			</div><br><br>
+        </section>
+        <section class="disclam">
+		    <div class="container">
+			<hr style="margin-top:0;">
+			    <div class="row">
+				    <div class="col-md-2 col-sm-2 leftdes">
+					    <p>Disclaimer</p>
+			        </div>
+					<div class="col-md-10 col-sm-10 rightdes">
+					    <p>Welcome to Buy & Rent.com. Our standard Terms of Use and Privacy Policy applies to all visits to, and use of, Buy & Rent.com or any services provided herein. Please note that Buy & Rent.com is not intended to provide professional, financial, legal or real-estate advice.<br><br>Buy & Rent.com, its officers, affiliates, directors, employees and consultants make no representation and provide no warranty as to the accuracy or reliability of any information at Buy & Rent.com. The user, and not Buy & Rent.com, shall be liable for any direct or indirect loss, claim, damage (of whatsoever nature), loss of profits etc. in relation to the use of any information displayed at Buy & Rent.com.<br><br>Please refer to our Terms of Use, the Privacy Policy and the Cookies Policy for further details.</p>
+			        </div>
+					
+			    </div>
+			</div>
+		</section>
+        <section class="location footer">
+		    
+		    <div class="container">
+			<hr>
+				<div class="row p-location">
+				    <div class="col-md-4 col-sm-4 col-xs-6">
+						<h4 style="margin-bottom:20px;">Buy & Rent</h4>
+						<p><a href="#">Our Story</a></p>
+						<p><a href="#">Contact Us</a></p>
+						<p><a href="#">Terms & Conditions</a></p>
+						<p><a href="#">Privacy Policy</a></p>
+						<p><a href="#">Blog</a></p>
+						<p><a href="#">Careers</a></p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<h4 style="margin-bottom:20px;">Quick Links</h4>
+						<p><a href="#">Projects in Pakistan</a></p>
+						<p><a href="#">Developers in Pakistan</a></p>
+						<p><a href="#">Properties in Islamabad</a></p>
+						<p><a href="#">Properties in Sukkur</a></p>
+						<p><a href="#">Properties in Hyderabad</a></p>
+						<p><a href="#">Properties in Faisalabad</a></p>
+						<p><a href="#">Properties in Gujranwala</a></p>
+						<p><a href="#">Properties in Multan</a></p>
+						<p><a href="#">Properties in Rawalpindi</a></p>
+						
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6 contact">
+						<h4 style="margin-bottom:20px;">Contact Us</h4>
+						<p><i class="bi bi-envelope"></i> &nbsp;&nbsp;<span>Mail:</span>&nbsp; <a href="#">info@Buy & Rent.com</a></p>
+						<p><i class="bi bi-telephone-fill"></i> &nbsp;&nbsp;<span>UAN:</span>&nbsp; <a href="#">111-555-555/0343-2555555</a></p>
+						<h2>Head Office</h2>
+						<address><i class="bi bi-geo-alt-fill"></i> &nbsp;&nbsp;4th Floor, Beverly Centre, Blue Area, Islamabad</address>
+						<h2>Lahore Office</h2>
+						<address><i class="bi bi-geo-alt-fill"></i> &nbsp;&nbsp;9 Arches Arcade, 76-B1, M.M. Alam Road, Gulberg 3, Lahore</address>
+						<h2>Buy & Rent Regional Office</h2>
+						<address><i class="bi bi-geo-alt-fill"></i> &nbsp;&nbsp;National Hwy 5, Morgah, Rawalpindi, Punjab</address>
+					</div>
+				</div>
+				<hr>
+				<div class="row last-ff">
+				    <div class="col-md-6 col-sm-5 leftpp">
+					    <p><img width="auto" height="auto" style="filter: brightness(3) invert(10);opacity:0.5" src="img/underlogo.png"><span>&nbsp;&nbsp;Copyright © 2021 Buy & Rent Pvt Ltd. All Rights Reserved.</span></p>
+					    
+					</div>
+				    <div class="col-md-6 col-sm-7 rightpp">  
+						<div class="btn-group  dropup">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							 <span>Unit: <span class="manssin">PKR</span></span> <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" id="pknmb">
+							<li class="lopop activclop ">PKR</li>
+							<li class="lopop">AED</li>
+							<li class="lopop">AUD</li>
+							<li class="lopop">CAD</li>
+							<li class="lopop">CNY</li>
+							<li class="lopop">EUR</li>
+							<li class="lopop">GBP</li>
+							<li class="lopop">JPY</li>
+							<li class="lopop">SAR</li>
+							<li class="lopop">USD</li>
+						  </ul>
+						</div>
+						<div class="btn-group  dropup">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span>Currency: <span class="manssin">Standard</span></span> <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" id="standard">
+							<li class="strar activestan">Standard</li>
+							<li class="strar">Sqft</li>
+							<li class="strar">Sqyd</li>
+							<li class="strar">Sqm</li>
+							<li class="strar">Marla</li>
+							<li class="strar">Kanal</li>
+							<li class="strar">Acre</li>
+						  </ul>
+						</div>
+							    
+							
+							  
+					   
+					
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		</div>
+		<div class="mobile-section" id="mbcsectionok">
+		    <section class="mobile-navbar" id="mnvvar">
+			    <div class="mb-main-navbar">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-10 rightlogo">
+								<img class="mb-logo" src="img/logo.png">
+							    <p>Pakistan's 1st Online Real Estate Marketplace</p>
+							</div>
+							<div class="col-xs-2">
+								<div class="menu-icon" onclick="menuicon(this)">
+								  <i class="bi bi-list"></i>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			    <div id="mySidepanel" class="sidepanel">
+				    <center class="mb-logocenter">
+					    <img class="mb-logo" src="img/logo.png">
+						<p>Pakistan's 1st Online Real Estate Marketplace</p>
+					</center>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x-circle"></i></a>
+                    <ul>
+					    <li class="mbac mbactive"><a href="#"><i class="bi bi-shop"></i> &nbsp;&nbsp;&nbsp;Add Property</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-house-door"></i> &nbsp;&nbsp;&nbsp;Home</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-building"></i> &nbsp;&nbsp;&nbsp;Project</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-gear"></i> &nbsp;&nbsp;&nbsp;Wanted</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-bank"></i> &nbsp;&nbsp;&nbsp;Fresh Listings</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-clipboard-data"></i>  &nbsp;&nbsp;&nbsp;Blog</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-telephone-plus"></i> &nbsp;&nbsp;&nbsp;Contact Us</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-person-plus"></i> &nbsp;&nbsp;&nbsp;Agents</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-bookmark-heart"></i> &nbsp;&nbsp;&nbsp;Our Story</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-graph-up"></i> &nbsp;&nbsp;&nbsp;Careers</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-box-arrow-in-left"></i> &nbsp;&nbsp;&nbsp;Log In</a></li>
+					    <li class="mbac"><a href="#"><i class="bi bi-box-arrow-in-up"></i> &nbsp;&nbsp;&nbsp;Sign Up</a></li>
+					</ul>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search by Property Id">
+						  <span class="input-group-btn">
+							<button class="btn btn-default" type="button"><i class="bi bi-search"></i></button>
+						  </span>
+					</div>
+                </div>
+		    </section>
+			<section class="rent-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2 homeimg">
+							<img src="img/mobile/search-property.svg">
+						</div>
+						<div class="col-xs-5 rbbtn">
+						    <p>Search Property:</p>
+						    <a class="btn btn-default" href="#" role="button">Rent</a>
+						</div>
+						<div class="col-xs-5 rbbtn">
+						    <a class="btn btn-default" href="#" role="button">Buy</a>
+						</div>
+						
+					</div>
+			    </div>
+			</section>
+			<section class="allaccount-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6" style="padding-right: 5;">
+						    <a href="#">
+								<div class="thumbnail">
+									<div class="caption">
+										<img src="img/mobile/sell-rent.svg" alt="...">
+										<p>Sell/Rent Out</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6" style="padding-left: 5;">
+						    <a href="#">
+								<div class="thumbnail">
+									<div class="caption">
+										<img src="img/mobile/invest.svg" alt="...">
+										<p>Invest</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6" style="padding-right: 5;">
+						    <a href="#">
+								<div class="thumbnail">
+									<div class="caption">
+										<img src="img/mobile/news.svg" alt="...">
+										<p>News</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6" style="padding-left: 5;">
+						    <a href="#">
+								<div class="thumbnail">
+									<div class="caption">
+										<img src="img/mobile/clubs.svg" alt="...">
+										<p>Clubs</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+			    </div>
+				<br><br><br>
+			</section>
+			<div class="row imglast">
+				<div class="col-sm-12">
+					<center><img src="img/mobile/HYDS-red-heart.svg"></center>
+				</div>
+			</div>
+			
+		</div> 
+		
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   <!-- Include all compiled plugins (below), or include individual files as needed -->
+			   <script src="js/bootstrap.min.js"></script>
+			   <script src="js/index.js"></script>
+			   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+			   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+			   <script type="text/javascript" src="js/slide.js"></script>
+			   <script  src="js/touch.js"></script>
+                <script>
+				  $(document).ready(function () {
+      $('select').selectize({
+          sortField: 'text'
+      });
+  });
+				</script>
+			
+				
+	</body>
+</html>
