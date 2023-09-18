@@ -1638,7 +1638,7 @@ body{
     font-weight: 500;
 }
 .mobile-navbar .mb-logo,.mb-main-navbar .rightlogo .mb-logo{
-	width:200px;
+	width:160px;
 }
 
 .sidepanel .closebtn {
@@ -1753,7 +1753,7 @@ body{
 	color: #868686;
 }
 .rent-section{
-	margin-top:100px;
+	margin-top:108px;
 	padding-left:8px;
 	padding-right:8px;
 }
